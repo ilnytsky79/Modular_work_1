@@ -8,12 +8,12 @@ class Euro : Course, Transformation {
         when (operation){
             "+" -> {
                 sum = euro+dollar*toEuro()
-                println("якщо за 1 долар дають ${toEuro()} євро, а за 1 євро ${toDollar()} долара:")
+                println("якщо за 1 долар дають ${toDollar()} євро, а за 1 євро ${toEuro()} долара:
                 transformation(sum, "eur", toDollar(),toEuro())
                                            }
             "-" -> {
                 sum = euro- dollar*toEuro()
-                println("якщо за 1 долар дають ${toEuro()} євро, а за 1 євро ${toDollar()} долара:")
+                println("якщо за 1 долар дають ${toDollar()} євро, а за 1 євро ${toEuro()} долара:
                 transformation(sum, "$", toDollar(),toEuro())
             }
             else -> println("Вказано не вірний математичний знак. Має бути + або -.")
