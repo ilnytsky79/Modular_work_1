@@ -7,13 +7,13 @@ class Dollar : Course, Transformation  {
 
         when (operation){
             "+" -> {
-                sum = euro*toDollar()+dollar
+                sum = euro*toEuro()+dollar
                 println("якщо за 1 долар дають ${toDollar()} євро, а за 1 євро ${toEuro()} долара:")
                 transformation(sum, "$", toDollar(),toEuro())
 
             }
             "-" -> {
-                sum = euro*toDollar()- dollar
+                sum = euro*toEuro()- dollar
                 println("якщо за 1 долар дають ${toDollar()} євро, а за 1 євро ${toEuro()} долара:
                 transformation(sum, "$", toDollar(),toEuro())
 
