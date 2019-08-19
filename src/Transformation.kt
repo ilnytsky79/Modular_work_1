@@ -13,14 +13,14 @@ interface Transformation  {
                 val writer= PrintWriter("result.log")
                 print("$ ")
                 println("$result")
-                writer.appendln("якщо за 1 долар дають $toDollar євро, а за 1 євро $toEuro долара: \n $ $result \n")
+                writer.appendln("якщо за 1 долар дають $toEuro євро, а за 1 євро $toDollar долара: \n $ $result \n")
                 writer.close()
             }
             "eur"->{
                 val writer= PrintWriter("result.log")
                 print("$result")
                 println("eur")
-                writer.appendln("якщо за 1 долар дають $toDollar євро, а за 1 євро $toEuro долара: \n ${result}eur \n")
+                writer.appendln("якщо за 1 долар дають $toEuro євро, а за 1 євро $toDollar долара: \n ${result}eur \n")
                 writer.close()
 
             }
